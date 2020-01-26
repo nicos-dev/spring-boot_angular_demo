@@ -1,5 +1,7 @@
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=nicholas-dietz_spring-boot_angular_demo)](https://sonarcloud.io/dashboard?id=nicholas-dietz_spring-boot_angular_demo)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nicholas-dietz_spring-boot_angular_demo&metric=alert_status)](https://sonarcloud.io/dashboard?id=nicholas-dietz_spring-boot_angular_demo)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nicholas-dietz_spring-boot_angular_demo&metric=bugs)](https://sonarcloud.io/dashboard?id=nicholas-dietz_spring-boot_angular_demo)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nicholas-dietz_spring-boot_angular_demo&metric=security_rating)](https://sonarcloud.io/dashboard?id=nicholas-dietz_spring-boot_angular_demo)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nicholas-dietz_spring-boot_angular_demo&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=nicholas-dietz_spring-boot_angular_demo)
 # Spring-Boot & Angular Demo
 The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests (interacting with H2-Database).</br>
 >![picture](https://github.com/nicholas-dietz/spring-boot_angular_demo/blob/master/GitHub/img/demo-ui.png)
