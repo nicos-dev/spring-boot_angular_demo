@@ -1,4 +1,4 @@
-# Demo
+# Spring-Boot & Angular Demo
 The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests (interacting with H2-Database).</br>
 >![picture](https://github.com/nicholas-dietz/spring-boot_angular_demo/blob/master/GitHub/img/demo-ui.png)
 
