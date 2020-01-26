@@ -1,5 +1,5 @@
 # Demo
-The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests.</br>
+The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests (interacting with H2-Database).</br>
 >![picture](https://github.com/nicholas-dietz/spring-boot_angular_demo/blob/master/GitHub/img/demo-ui.png)
 
 ## Requires
@@ -56,5 +56,5 @@ ng serve
 ### Finish
 
 **Now Spring-Boot runs on port 8443 & Angular on port 4200.**
-
-[]()
+ 
+ > Also H2-Console is reachable at https://[host-of-service]:8443/h2-console
