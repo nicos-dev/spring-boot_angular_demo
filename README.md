@@ -1,5 +1,6 @@
 # Demo
-The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests.
+The demo shows how to achieve SSL/TLS encrypted communication &amp; handle standard http-requests.</br>
+>![picture](https://github.com/nicholas-dietz/spring-boot_angular_demo/blob/master/GitHub/img/demo-ui.png)
 
 ## Requires
 - Spring-Boot
