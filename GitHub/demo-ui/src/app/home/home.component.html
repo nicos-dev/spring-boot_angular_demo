@@ -1,0 +1,95 @@
+<body>
+
+  <div class="header">
+    <h1>Demo UI</h1>
+  </div>
+
+  <!-- Request Block -->
+  <h2>Request</h2>
+  <form [formGroup]="form">
+    <div class="request-container">
+
+      <!-- GET -->
+      <div class="request-get">
+
+      </div>
+
+      <!-- POST -->
+      <div class="request-post">
+        <mat-form-field appearance="outline">
+          <mat-label>Sample Text</mat-label>
+          <mat-icon matSuffix>title</mat-icon>
+          <input formControlName="postText" matInput type="text" placeholder="Type in some text..." required>
+        </mat-form-field>
+      </div>
+
+      <!-- PUT -->
+      <div class="request-put">
+        <div class="form-fields">
+          <div class="form-field-upper">
+            <mat-form-field appearance="outline">
+              <mat-label>ID</mat-label>
+              <input formControlName="putId" matInput type="number" placeholder="Type in ID..." required>
+            </mat-form-field>
+          </div>
+          <div class="form-field-lower">
+            <mat-form-field appearance="outline">
+              <mat-label>Sample Text</mat-label>
+              <mat-icon matSuffix>title</mat-icon>
+              <input formControlName="putText" matInput type="text" placeholder="Type in some text..." required>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Execute Block -->
+  <h2>Execute</h2>
+  <div class="button-container">
+
+    <!-- GET -->
+    <div class="button-get">
+      <button (click)="get()" mat-button>GET api/v1/all</button>
+      <span *ngIf="getOK" class="dot-ok"></span>
+      <span *ngIf="getOK === false" class="dot-not-ok"></span>
+      <span *ngIf="getOK === undefined" class="dot-not-set"></span>
+    </div>
+
+    <!-- POST -->
+    <div class="button-post">
+      <button [disabled]="!postValid" (click)="post()" mat-button>POST api/v1/create</button>
+      <span *ngIf="postOK" class="dot-ok"></span>
+      <span *ngIf="postOK === false" class="dot-not-ok"></span>
+      <span *ngIf="postOK === undefined" class="dot-not-set"></span>
+    </div>
+
+    <!-- PUT -->
+    <div class="button-put">
+      <button [disabled]="!putValid" (click)="put()" mat-button>PUT api/v1/update</button>
+      <span *ngIf="putOK" class="dot-ok"></span>
+      <span *ngIf="putOK === false" class="dot-not-ok"></span>
+      <span *ngIf="putOK === undefined" class="dot-not-set"></span>
+    </div>
+  </div>
+
+  <!-- Response Block -->
+  <h2>Response</h2>
+  <div class="response-container">
+
+    <!-- GET -->
+    <div class="response-get">
+      <ngx-json-viewer *ngIf="getOK" [json]="getBody"></ngx-json-viewer>
+    </div>
+
+    <!-- POST -->
+    <div class="response-post">
+      <ngx-json-viewer *ngIf="postOK" [json]="postBody"></ngx-json-viewer>
+    </div>
+
+    <!-- PUT -->
+    <div class="response-put">
+      <ngx-json-viewer *ngIf="putOK" [json]="putBody"></ngx-json-viewer>
+    </div>
+  </div>
+<body>
