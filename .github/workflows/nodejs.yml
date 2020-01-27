@@ -17,12 +17,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: npm install && ng build
       run: |
-        cd ./GitHub && ls
+        cd ./GitHub/demo-ui && ls
         npm install -g npm@latest
         npm install -g @angular/cli
-        cd /GitHub/demo-ui/ && npm install
-        cd /GitHub/demo-ui/ && ng build
+        npm install
+        ng build
       env:
         CI: true
