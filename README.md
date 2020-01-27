@@ -37,6 +37,7 @@ trust.*
 ```sh
 cd /Path/to/demo-service/ && ./mvnw clean package
 ``` 
+> Run /demo-service/target/demo*.jar
 
 **OR**
 
@@ -59,6 +60,8 @@ ng serve
 
 ### Finish
 
-**Now Spring-Boot runs on port 8443 & Angular on port 4200.**
+ > Angular runs on port **4200**
+
+ > Spring-Boot runs on port **8443**
  
- > Also H2-Console is reachable at https://[host-of-service]:8443/h2-console
+Also H2-Console is reachable at https://[host-of-service]:8443/h2-console
