@@ -23,8 +23,8 @@ jobs:
         npm install -g npm@latest
         npm install -g @angular/cli
     - name: Install packages
-      run: npm install
+      run: cd ./GitHub/demo-ui && npm install
     - name: Angular build
-      run: ng build demo-ui
+      run: cd ./GitHub/demo-ui && ng build
       env:
         CI: true
