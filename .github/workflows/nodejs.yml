@@ -22,7 +22,7 @@ jobs:
         ls
         npm install -g npm@latest
         npm install -g @angular/cli
-        cd ./GitHub/demo-ui/ && npm install
-        cd ./GitHub/demo-ui/ && ng build
+        cd /GitHub/demo-ui/ && npm install
+        cd /GitHub/demo-ui/ && ng build
       env:
         CI: true
