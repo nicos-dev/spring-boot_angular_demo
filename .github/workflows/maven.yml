@@ -15,4 +15,6 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: cd ./GitHub/demo-service/ && mvn clean package -e
+    - name: registry
+      run: cd ./GitHub/demo-service/ && mvn deploy -Dregistry=https://maven.pkg.github.com/nicholas-dietz -Dtoken=GH_TOKEN
      # run: mvn -B package --file pom.xml
