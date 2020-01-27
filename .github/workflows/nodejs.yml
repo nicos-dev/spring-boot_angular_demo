@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        ls
+        cd /GitHub/ && ls
         npm install -g npm@latest
         npm install -g @angular/cli
         cd /GitHub/demo-ui/ && npm install
