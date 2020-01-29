@@ -56,8 +56,10 @@ Run via IDE
 > serviceHost: 'https://[host-of-service]:8443/api/v1'
 
 #### Run
+> **Note:** Run in ./GitHub/demo-ui
 
 ``` sh
+npm install
 ng serve
 ```
 
