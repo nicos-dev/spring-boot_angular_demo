@@ -24,7 +24,7 @@ The demo shows how to achieve SSL/TLS encrypted communication &amp; handle stand
 > Navigate to ./Github/demo-service/
 
 
-#### Generate keystore
+#### Update keystore
 ```sh
 keytool -genkeypair -alias <name> -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore <name>.p12 -validity 3650
 keytool -genkeypair -alias <name> -keyalg RSA -keysize 2048 -keystore <name>.jks -validity 3650
